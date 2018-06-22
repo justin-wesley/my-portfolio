@@ -6,7 +6,8 @@ phases:
       - echo Nothing to do
 artifacts:
   files:
-    - **/*.html
+    - index.html
+    - react.html
     - favicon.ico
     - styles/*
     - images/*
