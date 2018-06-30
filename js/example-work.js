@@ -6,8 +6,24 @@ class ExampleWork extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            "modalOpen": false,
+            "selectedExample": this.props.work[0]
         };
+        this.openModal = this.openModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
+    }
+
+    openModal(evt, example) {
+        this.setState({
+            "modalOpen": true,
+            "selectedExample": example
+        });
+    }
+
+    closeModal(evt) {
+        this.setState({
+            "modalOpen": false
+        })
     }
 
     render() {
@@ -17,12 +33,12 @@ class ExampleWork extends React.Component {
                     {
                         this.props.work.map((example, index) => {
                             return (
-                                <ExampleWorkBubble example={example} key={index}/>
+                                <ExampleWorkBubble example={example} key={index} openModal={this.openModal} />
                             );
                         })
                     }
                 </section>
-                <ExampleWorkModal/>
+                <ExampleWorkModal example={this.state.selectedExample} open={this.state.modalOpen} closeModal={this.closeModal} />
             </span>
         )
     }
@@ -33,7 +49,7 @@ class ExampleWorkBubble extends React.Component {
     render() {
         let example = this.props.example;
         return (
-            <div className="section__exampleWrapper">
+            <div className="section__exampleWrapper" onClick={(evt) => this.props.openModal(evt, example) }>
                 <div className="section__example">
                     <img alt={example.image.description}
                          className="section__exampleImage"

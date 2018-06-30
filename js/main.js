@@ -6,7 +6,7 @@ const myWork = [
     {
         "title": "Work Example",
         "href": "https://example.com",
-        "desc": `Neuter, pius parmas vix demitto de raptus, mirabilis verpa. Cum domina manducare, omnes poetaes promissio germanus, gratis rumores.
+        "description": `Neuter, pius parmas vix demitto de raptus, mirabilis verpa. Cum domina manducare, omnes poetaes promissio germanus, gratis rumores.
 Castor magnum abaculus est. Absolutios sunt galataes de neuter saga. Cum verpa potus, omnes burguses magicae castus, emeritis gabaliumes.
 Urbs, bursa, et castor. Nunquam perdere cotta. Nunquam tractare deus. Ferox, primus rationes vix anhelare de peritus, flavum coordinatae.
 Sunt amicitiaes quaestio superbus, domesticus bromiumes. Sunt idoleumes quaestio brevis, altus brodiumes. Cum fiscina nocere, omnes quadraes anhelare emeritis, raptus hippotoxotaes.
@@ -19,7 +19,7 @@ Pol, a bene brodium, peritus fermium! Rusticus luna hic carpseriss nutrix est. V
     }, {
         "title": "Work Example",
         "href": "https://example.com",
-        "desc": `I command this modification, it's called cloudy history. Powerdrain at the galaxy that is when quirky suns harvest.
+        "description": `I command this modification, it's called cloudy history. Powerdrain at the galaxy that is when quirky suns harvest.
 The nanomachine is more astronaut now than processor. brave and technically unrelated. The distant cosmonaut revolutionary gathers the transformator.
 The human particle always examines the parasite. The nanomachine is more planet now than ship. clear and surprisingly ancient.
 The sonic shower is a strange captain. Mineral at the radiation dome was the peace of stigma, transfered to a unrelated captain.
@@ -32,7 +32,7 @@ Harvest nosily like a delighted processor. Galaxy at the cabin was the paralysis
     }, {
         "title": "Work Example",
         "href": "https://example.com",
-        "desc": `With ground beef  drink ramen lassi. Per guest prepare five teaspoons of whiskey with simmered marshmellow for dessert.
+        "description": `With ground beef  drink ramen lassi. Per guest prepare five teaspoons of whiskey with simmered marshmellow for dessert.
 Everyone just loves the saltyness of garlic frittata rubd with brown sugar. Try warming caviar sauce tossed with whiskey.
 Pork butt combines greatly with juicy pork shoulder. Try varnishing the triple sec rice with tasty salsa verde and sausages sauce, cooked.
 Try grilling ghee paste blended with bourbon. Chicken breasts can be garnished with divided cucumber, also try mixing the pie with teriyaki.

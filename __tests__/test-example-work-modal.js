@@ -21,12 +21,17 @@ Pol, a bene brodium, peritus fermium! Rusticus luna hic carpseriss nutrix est. V
         }
     };
 describe("ExampleWorkModal component", () => {
-    let component = shallow(<ExampleWorkModal example={myWork}/>)
+    let component = shallow(<ExampleWorkModal example={myWork} open={false}/>)
+    let openComponent = shallow(<ExampleWorkModal example={myWork} open={true}/>)
     let anchors = component.find('a');
     it("Should contain a single anchor element", () => {
         expect(anchors.length).toEqual(1);
     });
     it("Should link to our project", () => {
         expect(anchors.prop("href")).toEqual(myWork.href);
+    })
+    it("Should have the modal class set correctly", () => {
+        expect(component.find(".background--skyBlue").hasClass("modal--closed")).toBe(true)
+        expect(openComponent.find(".background--skyBlue").hasClass("modal--open")).toBe(true)
     })
 });
