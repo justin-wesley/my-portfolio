@@ -1,18 +1,29 @@
 import React from 'react';
+import ExampleWorkModal from "./example-work-modal";
 
 class ExampleWork extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        };
+    }
+
     render() {
         return (
-            <section className="section section--alignCentered section--description">
-                {
-                    this.props.work.map((example, index) => {
-                        return (
-                            <ExampleWorkBubble example={example} key={index}/>
-                        );
-                    })
-                }
-            </section>
+            <span>
+                <section className="section section--alignCentered section--description">
+                    {
+                        this.props.work.map((example, index) => {
+                            return (
+                                <ExampleWorkBubble example={example} key={index}/>
+                            );
+                        })
+                    }
+                </section>
+                <ExampleWorkModal/>
+            </span>
         )
     }
 }
@@ -38,7 +49,6 @@ class ExampleWorkBubble extends React.Component {
         );
     }
 }
-
 
 
 export default ExampleWork;
